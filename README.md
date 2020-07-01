@@ -1,2 +1,2 @@
 # TeaChat
-An old-school style chat web app, in NodeJS.
+A simple chatroom web app, written in NodeJS.
