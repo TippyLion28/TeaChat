@@ -164,7 +164,7 @@ io.sockets.on('connection', function(client) { //On connection
 					
 					//General Commands
 					case '/help':
-						sendMessage('client', 'Welcome to the NodeJS powered old-school chatroom. Type /commands for a list of commands.');
+						sendMessage('client', 'Welcome to TeaChat, a simple chatroom web app, written in NodeJS. Type /commands for a list of commands.');
 					break;
 					case '/join':
 						message[0] = ''; //Remove the /join command from the message, so the rest of the command can be used as the room name
