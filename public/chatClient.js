@@ -6,8 +6,8 @@ const originalTitle = document.title; //Keep the original page title
 var allowReconnect = false; //Whether the client should attempt to reconnect on connection loss
 var roomID = ''; //Remember the room ID so we can re-join the correct room in case of a disconnection
 var autoScroll = true; //Whether to automatically scroll to the bottom of the page when a new message comes through
-var messageHistory = [];
-var messageFuture = [];
+var messageHistory = []; //Stores all past messages
+var messageFuture = []; //Used to temporarily store messages as the user shuffles through message history
 
 /*Functions*/
 function unFocus() { //When the window goes out of focus
