@@ -31,6 +31,8 @@ If the installation was successful, you should be able to run the following comm
 If you need to update `npm`:
 
     $ npm install npm -g
+## Setting up TeaChat
+Before starting TeaChat for the first time, `cd` into the `TeaChat/` directory and run `npm install`.
 
 ## Starting the TeaChat Server
 To start the server, `cd` into the `TeaChat/` directory and run `node index.js`.
