@@ -1,0 +1,102 @@
+* { /*No gaps around the chat*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+}
+
+/*Loading Spinner*/
+#loader{
+	position:fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('Vector_Loading.svg') 
+	50% 50% no-repeat;
+	pointer-events: none;
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*Message List*/
+#messageContainer {
+    margin-bottom: 45px;
+}
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#messages li {
+    padding: 5px 10px;
+    object-fit: contain;
+}
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+
+/*For images posted to chat*/
+.chatImage{
+	border-radius: 15px;
+	max-width: 100%;
+	max-height: 250px;
+}
+@media only screen and (min-width: 600px) { /*If the screen is wide*/
+  .chatImage {
+	max-width: 600px;
+	max-height: 350px;
+}
+}
+
+/*Text field and submit buttons*/
+#form {
+    background: #fff;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-color: #000;
+    border-top-style: solid;
+    border-top-width: 1px;
+	height:38px;
+}
+
+#form #txt {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    width: 60vw;
+}
+/*Submit text button*/
+#form #submitTxt {
+    width: 15vw;
+    background: rgb(130, 224, 255);
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+	float:right;
+	cursor: pointer;
+}
+/*Submit image button*/
+#form #submitImage {
+    width: 10vw;
+    background: rgb(130, 224, 255);
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+	float:left;
+	cursor: pointer;
+}
+

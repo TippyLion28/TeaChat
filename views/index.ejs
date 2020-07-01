@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- Title/Meta Tags -->
+    <title>TeaChat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!-- Scripts -->
+    <script src="jquery-1.10.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body id="page">
+	<div id="messageContainer">
+    <ul id="messages"></ul>
+	</div>
+	<div id="loader"></div>
+	<div id="form">
+	<input type="file" onchange="sendFile()" style="display: none;" id="selectedFile"><button id="submitImage" onclick="document.getElementById('selectedFile').click();">📷</button>
+    <form action="/" method="POST" id="chatForm">
+		<input id="txt" autocomplete="off" autofocus="on" placeholder="Type your message here..." /><button id="submitTxt">Send</button>
+    </form>
+	</div>
+    <script src="chatClient.js"></script>
+  </body>
+</html>
