@@ -1,10 +1,9 @@
 # TeaChat
 A simple chatroom web app, written in NodeJS.
 
----
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+To run TeaChat, you will only need Node.js and npm installed in your environement.
 
 ### Node
 - #### Node installation on Windows
@@ -30,6 +29,9 @@ If the installation was successful, you should be able to run the following comm
     $ npm --version
     6.1.0
 
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+If you need to update `npm`:
 
     $ npm install npm -g
+
+##Starting the TeaChat Server
+To start the server, `cd` into the `TeaChat/` directory and run `node index.js`.
