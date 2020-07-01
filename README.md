@@ -34,3 +34,36 @@ If you need to update `npm`:
 
 ## Starting the TeaChat Server
 To start the server, `cd` into the `TeaChat/` directory and run `node index.js`.
+
+##TODO
+- Make the text cursor jump to the end of the text box as the user cycles through past messages with the arrow keys
+- Detect when the user has modified the text box or submitted the message in order to reset the message history
+- Add small icons/images/stickers that can be summoned using commands
+- Unify the server-side code for joining the server and joining a new room
+- Check mime types on images before broadcasting it to the room
+- Add compression to image base64 send/recieve
+- Admin/Moderator logon (with ban/kick permissions etc.)
+- Use an external config file for changing things like port numbers and max lengths
+- Add kick/ban functionality to the CLI
+- Show a list of all other clients in the room on the client side
+- UI redesign
+- Dark/Light mode (command?)
+- Show when chat participants are typing
+- Desktop Notifications
+- Rate limiting
+- Allow the CLI to 'join' a room and view chat messages
+- Whisper
+- `/changeNick` command (and announce the name change to chat participants)
+- MOTD
+- Auto-detect connection loss
+- Protect against clientside fiddling (recieving messages without being properly authenticated)
+- Stop the address bar from collapsing on mobile
+- Encryption (https/wss)
+- Call scrollDown() whenever list is appended to rather than for every socket event
+- Fix the sticky chat bar (make the buttons scale nicely on desktop/mobile)
+###Games
+- Quizzes
+- Rock, Paper, Scissors
+###Bots
+- Google bot
+- Translator bot
