@@ -32,5 +32,5 @@ If you need to update `npm`:
 
     $ npm install npm -g
 
-##Starting the TeaChat Server
+## Starting the TeaChat Server
 To start the server, `cd` into the `TeaChat/` directory and run `node index.js`.
