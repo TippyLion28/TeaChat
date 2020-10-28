@@ -71,3 +71,5 @@ To start the server, `cd` into the `TeaChat/` directory and run `node index.js`.
 - Encryption (https/wss)
 - Call `scrollDown()` whenever list is appended to rather than for every socket event
 - Fix the sticky chat bar (make the buttons scale nicely on desktop/mobile)
+
+# Test
